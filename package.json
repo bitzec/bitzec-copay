@@ -1,8 +1,8 @@
 {
   "//": "        Modify it in the app-template directory",
   "name": "copay",
-  "description": "A Secure BitcoinZ Wallet",
-  "author": "BitcoinZ Community",
+  "description": "A Secure Bitzec Wallet",
+  "author": "Bitzec Community",
   "version": "10.0.10",
   "keywords": [
     "bitcoin",
@@ -13,9 +13,9 @@
     "bitcore"
   ],
   "main": "www/index.html",
-  "title": "BitcoinZ",
+  "title": "Bitzec",
   "window": {
-    "title": "BitcoinZ - BitcoinZ Wallet",
+    "title": "Bitzec - Bitzec Wallet",
     "icon": "www/img/app/icon.png",
     "toolbar": false,
     "show": true,
@@ -37,14 +37,14 @@
   },
   "dom_storage_quota": 200,
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://btcz.rocks",
+  "homepage": "https://bitzec.org",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitcoinz-wallets/bitcoinz-copay-wallet.git",
+    "url": "git://github.com/bitzec/bitzec-copay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitcoinz-wallets/bitcoinz-copay-wallet/issues"
+    "url": "https://github.com/bitzec/bitzec-copay/issues"
   },
   "engines": {
     "node": "6",
@@ -57,7 +57,7 @@
     "bezier-easing": "^2.0.3",
     "bhttp": "^1.2.4",
     "bitauth": "^0.2.1",
-    "bitcore-wallet-client-btcz": "git+https://github.com/bitcoinz-wallets/bitcore-wallet-client-btcz.git#v1.0.3",
+    "bitcore-wallet-client-bzc": "git+https://github.com/bitzec/bitcore-wallet-client-bzc.git#v1.0.3",
     "bower": "^1.7.9",
     "cordova": "^8.0.0",
     "cordova-android": "^6.4.0",
@@ -181,7 +181,7 @@
       "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-qrscanner": {},
       "cordova-plugin-customurlscheme": {
-        "URL_SCHEME": "bitcoinz"
+        "URL_SCHEME": "bitzec"
       },
       "cordova-custom-config": {},
       "cordova-plugin-queries-schemes": {},

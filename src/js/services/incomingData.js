@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('copayApp.services').factory('incomingData', function($log, $state, $timeout, $ionicHistory, bitcoreBtcz, $rootScope, payproService, scannerService, appConfigService, popupService, gettextCatalog) {
+angular.module('copayApp.services').factory('incomingData', function($log, $state, $timeout, $ionicHistory, bitcoreBzc, $rootScope, payproService, scannerService, appConfigService, popupService, gettextCatalog) {
 
   var root = {};
 
@@ -39,7 +39,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
 
     function checkPrivateKey(privateKey) {
       try {
-        new bitcoreBtcz.PrivateKey(privateKey, 'livenet');
+        new bitcoreBzc.PrivateKey(privateKey, 'livenet');
       } catch (err) {
         return false;
       }
@@ -84,9 +84,9 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
 
     data = sanitizeUri(data);
 
-    if (bitcoreBtcz.URI.isValid(data)) {
-        var coin = 'btcz';
-        var parsed = new bitcoreBtcz.URI(data);
+    if (bitcoreBzc.URI.isValid(data)) {
+        var coin = 'bcz';
+        var parsed = new bitcoreBzc.URI(data);
 
         var addr = parsed.address ? parsed.address.toString() : '';
         var message = parsed.message;
@@ -118,7 +118,7 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
         return true;
       });
       // Plain Address
-    } else if (bitcoreBtcz.Address.isValid(data, 'livenet') || bitcoreBtcz.Address.isValid(data, 'testnet')) {
+    } else if (bitcoreBzc.Address.isValid(data, 'livenet') || bitcoreBzc.Address.isValid(data, 'testnet')) {
       if ($state.includes('tabs.scan')) {
         root.showMenu({
           data: data,

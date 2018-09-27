@@ -238,7 +238,7 @@ module.exports = function(grunt) {
           'CFBundleURLTypes': [
             {
               'CFBundleURLName': 'URI Handler',
-              'CFBundleURLSchemes': ['bitcoinz', '<%= pkg.name %>']
+              'CFBundleURLSchemes': ['bitzec', '<%= pkg.name %>']
             }
           ]
         }

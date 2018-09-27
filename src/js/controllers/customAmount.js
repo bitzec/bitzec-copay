@@ -40,21 +40,21 @@ angular.module('copayApp.controllers').controller('customAmountController', func
         data.stateParams.amount,
         data.stateParams.currency);
 
-      // Amount in USD or BTCZ
+      // Amount in USD or BZC
       var amount = parsedAmount.amount;
       var currency = parsedAmount.currency;
       $scope.amountUnitStr = parsedAmount.amountUnitStr;
 
-      if (currency != 'BTCZ') {
-        // Convert to BTCZ or BCH
+      if (currency != 'BZC') {
+        // Convert to BZC or BCH
         var config = configService.getSync().wallet.settings;
         var amountUnit = txFormatService.satToUnit(parsedAmount.amountSat);
-        var btczParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
+        var bzcParsedAmount = txFormatService.parseAmount($scope.wallet.coin, amountUnit, $scope.wallet.coin);
 
-        $scope.amountBtc = btczParsedAmount.amount;
-        $scope.altAmountStr = btczParsedAmount.amountUnitStr;
+        $scope.amountBtc = bzcParsedAmount.amount;
+        $scope.altAmountStr = bzcParsedAmount.amountUnitStr;
       } else {
-        $scope.amountBtc = amount; // BTCZ or BCH
+        $scope.amountBtc = amount; // BZC or BCH
         $scope.altAmountStr = txFormatService.formatAlternativeStr($scope.wallet.coin, parsedAmount.amountSat);
       }
     });
@@ -69,12 +69,12 @@ angular.module('copayApp.controllers').controller('customAmountController', func
 
   $scope.shareAddress = function() {
     if (!platformInfo.isCordova) return;
-    var data = 'bitcoinz:' + $scope.address + '?amount=' + $scope.amountBtc;
+    var data = 'bitzec:' + $scope.address + '?amount=' + $scope.amountBtc;
     window.plugins.socialsharing.share(data, null, null, null);
   }
 
   $scope.copyToClipboard = function() {
-    return 'bitcoinz:' + $scope.address + '?amount=' + $scope.amountBtc;
+    return 'bitzec:' + $scope.address + '?amount=' + $scope.amountBtc;
   };
 
 });

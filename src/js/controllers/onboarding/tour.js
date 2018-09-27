@@ -26,8 +26,8 @@ angular.module('copayApp.controllers').controller('tourController',
     $scope.$on("$ionicView.enter", function(event, data) {
       rateService.whenAvailable(function() {
         var localCurrency = 'USD';
-        var btczAmount = 1;
-        var rate = rateService.toFiat(btczAmount * 1e8, localCurrency, 'btcz');
+        var bzcAmount = 1;
+        var rate = rateService.toFiat(bzcAmount * 1e8, localCurrency, 'bzc');
         $scope.localCurrencySymbol = '$';
         $scope.localCurrencyPerBtc = $filter('formatFiatAmount')(parseFloat(rate.toFixed(2), 10));
         $timeout(function() {
