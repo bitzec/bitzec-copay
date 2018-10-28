@@ -1,7 +1,7 @@
 # WARNING #
 This software should be used at your own risk. It is experimental.
 
-<img src="https://raw.githubusercontent.com/bitzec/bitzec-copay/master/resources/copay/android/icon/drawable-xxxhdpi-icon.png" alt="Bitzec" width="79">
+<img src="https://raw.githubusercontent.com/bitzec/bitzec-copay/master/resources/copay/android/icon/drawable-xxxhdpi-icon.  png" alt="Bitzec" width="79">
 
 Bitzec Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Bitzec Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
