@@ -37,7 +37,7 @@ Clone the repo and open the directory:
 
 ```
 git clone https://github.com/bitzec/bitzec-copay.git
-cd bzc-wallet
+cd bitze-copay
 ```
 
 Install npm modules
