@@ -128,10 +128,10 @@ angular.module('copayApp.services').factory('incomingData', function($log, $stat
         goToAmountPage(data);
       }
 
-      // bitzecCard Authentication
+      // BitPayCard Authentication
     } else if (data && data.indexOf(appConfigService.name + '://') === 0) {
 
-      // Disable bitzec Card
+      // Disable BitPay Card
       if (!appConfigService._enabledExtensions.debitcard) return false;
 
       var secret = getParameterByName('secret', data);

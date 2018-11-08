@@ -7,7 +7,7 @@
 //var request = require('request');
 
 /*
-  This class lets interfaces with bitzec's exchange rate API.
+  This class lets interfaces with BitPay's exchange rate API.
 */
 
 var RateService = function(opts) {

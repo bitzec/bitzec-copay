@@ -3,10 +3,10 @@ This software should be used at your own risk. It is experimental.
 
 <img src="https://raw.githubusercontent.com/bitzec/bitzec-copay/master/resources/copay/android/icon/drawable-xxxhdpi-icon.  png" alt="Bitzec" width="79">
 
-Bitzec Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Bitzec Wallet uses [Bitcore Wallet Service](https://github.com/bitzec/bitcore-wallet-service-bzc) (BWS) for peer synchronization and network interfacing.
+Bitzec Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Bitzec Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
 
 Binary versions of Bitzec Wallet are available for download at [bitzec.global](https://www.bitzec.global/en/#wallets).
-For a list of frequently asked questions please visit the [Copay FAQ](https://github.com/bitzec/copay/wiki/COPAY---FAQ).
+For a list of frequently asked questions please visit the [Copay FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
 
 ## Main Features
 
@@ -185,12 +185,12 @@ On success, the Chrome extension will be located at: `browser-extensions/chrome/
 
 ### Enable External Services
 
-To enable external services, set the `COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` or `bitzec_EXTERNAL_SERVICES_CONFIG_LOCATION` environment variable to the location of your configuration before running the `apply` task.
+To enable external services, set the `COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` or `BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION` environment variable to the location of your configuration before running the `apply` task.
 
 ```
 COPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.copay/externalServices.json" npm run apply:copay
 # or
-bitzec_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.bitzec/externalServices.json" npm run apply:bitzec
+BITPAY_EXTERNAL_SERVICES_CONFIG_LOCATION="~/.bitpay/externalServices.json" npm run apply:bitpay
 ```
 
 ## About Bitzec
@@ -213,7 +213,7 @@ Information about backup and recovery procedures is available at: https://github
 
 Previous versions of Bitzec used files as backups. See the following section.
 
-It is possible to recover funds from a Bitzec Wallet without using Bitzec Wallet or the Wallet Service, check the [Copay Recovery Tool](https://github.com/bitzec/copay-recovery).
+It is possible to recover funds from a Bitzec Wallet without using Bitzec Wallet or the Wallet Service, check the [Copay Recovery Tool](https://github.com/bitpay/copay-recovery).
 
 
 ## Wallet Export Format
@@ -240,7 +240,7 @@ Since version 1.5, Bitzec Wallet uses the root `m/48'` for hardware multisignatu
 
 ## Bitcore Wallet Service
 
-Bitzec Wallet depends on [Bitcore Wallet Service](https://github.com/bitzec/bitcore-wallet-service-bzc) (BWS) for blockchain information, networking and Bitzec Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitzec.com`.  Switching between BWS instances is very simple and can be done with a click from within Bitzec Wallet.  BWS also allows Bitzec Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitzec/bitcore-wallet).
+Bitzec Wallet depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and Bitzec Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within Bitzec Wallet.  BWS also allows Bitzec Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
 
 ## Hardware Wallet Support
 
@@ -322,5 +322,5 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 
 ## License
 
-Bitzec Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/bitzec/copay/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
+Bitzec Wallet is released under the MIT License.  Please refer to the [LICENSE](https://github.com/bitpay/copay/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
 # Bitzec Wallet

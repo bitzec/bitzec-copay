@@ -35,4 +35,4 @@ function iconset {
 }
 
 postprocess copay
-postprocess bitzec
+postprocess bitpay

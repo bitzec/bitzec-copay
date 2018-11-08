@@ -307,8 +307,8 @@ angular.module('copayApp.services')
     //   lastFourDigits: card number
     //   token: card token
     // ]
-    root.setbitzecDebitCards = function(network, email, cards, cb) {
-      root.getbitzecAccounts(network, function(err, allAccounts) {
+    root.setBitpayDebitCards = function(network, email, cards, cb) {
+      root.getBitpayAccounts(network, function(err, allAccounts) {
         if (err) return cb(err);
 
         if (!allAccounts[email]) {
@@ -316,7 +316,7 @@ angular.module('copayApp.services')
         }
 
         allAccounts[email].cards = cards;
-        storage.set('bitzecAccounts-v2-' + network, allAccounts, cb);
+        storage.set('bitpayAccounts-v2-' + network, allAccounts, cb);
       });
     };
 
@@ -328,8 +328,8 @@ angular.module('copayApp.services')
     //   token: card token
     //   email: account email
     // ]
-    root.getbitzecDebitCards = function(network, cb) {
-      root.getbitzecAccounts(network, function(err, allAccounts) {
+    root.getBitpayDebitCards = function(network, cb) {
+      root.getBitpayAccounts(network, function(err, allAccounts) {
         if (err) return cb(err);
 
         var allCards = [];
@@ -351,8 +351,8 @@ angular.module('copayApp.services')
       });
     };
 
-    root.removebitzecDebitCard = function(network, cardEid, cb) {
-      root.getbitzecAccounts(network, function(err, allAccounts) {
+    root.removeBitpayDebitCard = function(network, cardEid, cb) {
+      root.getBitpayAccounts(network, function(err, allAccounts) {
 
         lodash.each(allAccounts, function(account) {
           account.cards = lodash.reject(account.cards, {
@@ -360,7 +360,7 @@ angular.module('copayApp.services')
           });
         });
 
-        storage.set('bitzecAccounts-v2-' + network, allAccounts, cb);
+        storage.set('bitpayAccounts-v2-' + network, allAccounts, cb);
       });
     };
 
@@ -381,8 +381,8 @@ angular.module('copayApp.services')
     //   }
     // }
     //
-    root.getbitzecAccounts = function(network, cb) {
-      storage.get('bitzecAccounts-v2-' + network, function(err, allAccountsStr) {
+    root.getBitpayAccounts = function(network, cb) {
+      storage.get('bitpayAccounts-v2-' + network, function(err, allAccountsStr) {
         if (err) return cb(err);
 
         if (!allAccountsStr)
@@ -392,7 +392,7 @@ angular.module('copayApp.services')
         try {
           allAccounts = JSON.parse(allAccountsStr);
         } catch (e) {
-          $log.error('Bad storage value for bitzecAccount-v2' + allAccountsStr)
+          $log.error('Bad storage value for bitpayAccount-v2' + allAccountsStr)
           return cb(null, {});
         };
 
@@ -400,25 +400,25 @@ angular.module('copayApp.services')
 
         lodash.each(allAccounts, function(account, email) {
 
-          // Migrate old `'bitzecApi-' + network` key, if exists
-          if (!account.token && account['bitzecApi-' + network].token) {
+          // Migrate old `'bitpayApi-' + network` key, if exists
+          if (!account.token && account['bitpayApi-' + network].token) {
 
-            $log.info('Migrating all bitzecApi-network branch');
-            account.token = account['bitzecApi-' + network].token;
-            account.cards = lodash.clone(account['bitzecApi-' + network].cards);
+            $log.info('Migrating all bitpayApi-network branch');
+            account.token = account['bitpayApi-' + network].token;
+            account.cards = lodash.clone(account['bitpayApi-' + network].cards);
             if (!account.cards) {
-              account.cards = lodash.clone(account['bitzecDebitCards-' + network]);
+              account.cards = lodash.clone(account['bitpayDebitCards-' + network]);
             }
 
-            delete account['bitzecDebitCards-' + network];
-            delete account['bitzecApi-' + network];
+            delete account['bitpayDebitCards-' + network];
+            delete account['bitpayApi-' + network];
             anyMigration = true;
 
           }
         });
 
         if (anyMigration) {
-          storage.set('bitzecAccounts-v2-' + network, allAccounts, function() {
+          storage.set('bitpayAccounts-v2-' + network, allAccounts, function() {
             return cb(err, allAccounts);
           });
         } else
@@ -433,11 +433,11 @@ angular.module('copayApp.services')
     //   familyName: account family (last) name
     //   givenName: account given (first) name
     // }
-    root.setbitzecAccount = function(network, data, cb) {
+    root.setBitpayAccount = function(network, data, cb) {
       if (!lodash.isObject(data) || !data.email || !data.token)
         return cb('No account to set');
 
-      root.getbitzecAccounts(network, function(err, allAccounts) {
+      root.getBitpayAccounts(network, function(err, allAccounts) {
         if (err) return cb(err);
 
         allAccounts = allAccounts || {};
@@ -448,8 +448,8 @@ angular.module('copayApp.services')
 
         allAccounts[data.email] = account;
 
-        $log.info('Storing bitzec accounts with new account:' + data.email);
-        storage.set('bitzecAccounts-v2-' + network, allAccounts, cb);
+        $log.info('Storing BitPay accounts with new account:' + data.email);
+        storage.set('bitpayAccounts-v2-' + network, allAccounts, cb);
       });
     };
 
@@ -458,20 +458,20 @@ angular.module('copayApp.services')
     //   apiContext: the context needed for making future api calls
     //   cards: an array of cards
     // }
-    root.removebitzecAccount = function(network, account, cb) {
+    root.removeBitpayAccount = function(network, account, cb) {
       if (lodash.isString(account)) {
         account = JSON.parse(account);
       }
       account = account || {};
       if (lodash.isEmpty(account)) return cb('No account to remove');
-      storage.get('bitzecAccounts-v2-' + network, function(err, bitzecAccounts) {
+      storage.get('bitpayAccounts-v2-' + network, function(err, bitpayAccounts) {
         if (err) cb(err);
-        if (lodash.isString(bitzecAccounts)) {
-          bitzecAccounts = JSON.parse(bitzecAccounts);
+        if (lodash.isString(bitpayAccounts)) {
+          bitpayAccounts = JSON.parse(bitpayAccounts);
         }
-        bitzecAccounts = bitzecAccounts || {};
-        delete bitzecAccounts[account.email];
-        storage.set('bitzecAccounts-v2-' + network, JSON.stringify(bitzecAccounts), cb);
+        bitpayAccounts = bitpayAccounts || {};
+        delete bitpayAccounts[account.email];
+        storage.set('bitpayAccounts-v2-' + network, JSON.stringify(bitpayAccounts), cb);
       });
     };
 

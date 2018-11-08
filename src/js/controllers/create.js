@@ -93,7 +93,7 @@ angular.module('copayApp.controllers').controller('createController',
 
       /*
 
-      Disable Hardware Wallets for bitzec distribution
+      Disable Hardware Wallets for BitPay distribution
 
       */
 

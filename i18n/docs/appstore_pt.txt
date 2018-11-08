@@ -1,4 +1,4 @@
-Armazene bitcoin com seus próprios termos com uma carteira de multi-assinaturas, open source, do bitzec. 
+Armazene bitcoin com seus próprios termos com uma carteira de multi-assinaturas, open source, do BitPay. 
 Usuários Copay podem manter fundos individualmente ou compartilhar finanças seguramente com outros usuários por meio de carteiras multi-assinadas, que previnem pagamentos não autorizados por meio de múltiplas aprovações. Algumas formas que a Copay pode ser usada com outros:
 
 Para economizar para férias ou juntar compras com amigos 
@@ -20,4 +20,4 @@ Notificações por e-mail para pagamentos e transferências
 Nomes e cores de fundo customizáveis para carteiras
 9 idiomas suportados (EN, CS, FR, DE, IT, ES, JA, PL, RU)
 
-Copay é gratuito e um software livre rodando em servidores não-proprietários, que não precisa de nenhuma empresa para o suporte contínuo. Qualquer um pode revisar ou contribuir para o código-fonte da Copay no GitHub (https://github.com/bitzec/copay). 
+Copay é gratuito e um software livre rodando em servidores não-proprietários, que não precisa de nenhuma empresa para o suporte contínuo. Qualquer um pode revisar ou contribuir para o código-fonte da Copay no GitHub (https://github.com/bitpay/copay). 

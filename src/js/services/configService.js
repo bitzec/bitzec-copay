@@ -18,8 +18,8 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     download: {
-      bitzec: {
-        url: 'https://bitzec.com/wallet'
+      bitpay: {
+        url: 'https://bitpay.com/wallet'
       },
       copay: {
         url: 'https://github.com/bitzec/bitzec-copay/releases'
@@ -27,9 +27,9 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rateApp: {
-      bitzec: {
+      bitpay: {
         ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1149581638&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
-        android: 'https://play.google.com/store/apps/details?id=com.bitzec.wallet',
+        android: 'https://play.google.com/store/apps/details?id=com.bitpay.wallet',
         wp: ''
       },
       copay: {
@@ -145,8 +145,8 @@ angular.module('copayApp.services').factory('configService', function(storageSer
         if (!configCache.pushNotifications) {
           configCache.pushNotifications = defaultConfig.pushNotifications;
         }
-        if (!configCache.bitzecAccount) {
-          configCache.bitzecAccount = defaultConfig.bitzecAccount;
+        if (!configCache.bitpayAccount) {
+          configCache.bitpayAccount = defaultConfig.bitpayAccount;
         }
 
         if (configCache.wallet.settings.unitCode == 'bit') {

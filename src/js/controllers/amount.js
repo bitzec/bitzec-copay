@@ -106,7 +106,7 @@ angular.module('copayApp.controllers').controller('amountController', function($
     };
 
     // Go to...
-    _id = data.stateParams.id; // Optional (bitzec Card ID or Wallet ID)
+    _id = data.stateParams.id; // Optional (BitPay Card ID or Wallet ID)
     $scope.nextStep = data.stateParams.nextStep;
 
 
