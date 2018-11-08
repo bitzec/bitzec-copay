@@ -92,27 +92,27 @@ msgstr "Benutzerkonto"
 msgid "Account Number"
 msgstr "Kontonummer"
 
-#: www/views/preferencesBitpayServices.html:23
+#: www/views/preferencesbitzecServices.html:23
 msgid "Accounts"
 msgstr "Konten"
 
-#: www/views/bitpayCard.html:56
+#: www/views/bitzecCard.html:56
 msgid "Activity"
 msgstr "Aktivität"
 
-#: src/js/services/bitpayAccountService.js:83
+#: src/js/services/bitzecAccountService.js:83
 msgid "Add Account"
 msgstr "Konto hinzufügen"
 
-#: src/js/services/bitpayAccountService.js:69
-msgid "Add BitPay Account?"
-msgstr "BitPay-Konto hinzufügen?"
+#: src/js/services/bitzecAccountService.js:69
+msgid "Add bitzec Account?"
+msgstr "bitzec-Konto hinzufügen?"
 
 #: www/views/addressbook.add.html:4 www/views/addressbook.html:22
 msgid "Add Contact"
 msgstr "Kontakt hinzufügen"
 
-#: www/views/bitpayCard.html:28
+#: www/views/bitzecCard.html:28
 msgid "Add Funds"
 msgstr "Guthaben aufladen"
 
@@ -147,8 +147,8 @@ msgstr "Beschreibung hinzufügen"
 msgid "Add funds"
 msgstr ""
 
-#: src/js/services/bitpayAccountService.js:78
-msgid "Add this BitPay account ({{email}})?"
+#: src/js/services/bitzecAccountService.js:78
+msgid "Add this bitzec account ({{email}})?"
 msgstr ""
 
 #: www/views/add.html:3
@@ -180,7 +180,7 @@ msgstr "Erweitert"
 msgid "Advanced Settings"
 msgstr "Erweiterte Einstellungen"
 
-#: www/views/bitpayCard.html:62
+#: www/views/bitzecCard.html:62
 msgid "All"
 msgstr "Alle"
 
@@ -297,17 +297,17 @@ msgstr "Wollen Sie wirklich diese Transaktion löschen?"
 msgid "Are you sure you want to skip it?"
 msgstr "Sind Sie sicher dass Sie es überspringen möchten?"
 
-#: www/views/modals/bitpay-card-confirmation.html:4
-msgid "Are you sure you would like to log out of your BitPay Card account?"
+#: www/views/modals/bitzec-card-confirmation.html:4
+msgid "Are you sure you would like to log out of your bitzec Card account?"
 msgstr ""
 
-#: src/js/controllers/preferencesBitpayCard.js:7
-#: src/js/controllers/preferencesBitpayServices.js:20
+#: src/js/controllers/preferencesbitzecCard.js:7
+#: src/js/controllers/preferencesbitzecServices.js:20
 msgid ""
-"Are you sure you would like to remove your BitPay Card ({{lastFourDigits}}) "
+"Are you sure you would like to remove your bitzec Card ({{lastFourDigits}}) "
 "from this device?"
 msgstr ""
-"Sind Sie sicher, dass Sie Ihre BitPay-Karte ({{lastFourDigits}}) von diesem "
+"Sind Sie sicher, dass Sie Ihre bitzec-Karte ({{lastFourDigits}}) von diesem "
 "Gerät entfernen möchten?"
 
 #: www/views/includes/walletInfo.html:10
@@ -383,9 +383,9 @@ msgstr ""
 "abzulegen. Ihr Geld kann nicht ohne dieser Phrase wiederhergestellt werden "
 "falls die App deinstalliert wird."
 
-#: www/views/preferencesBitpayServices.html:9
-msgid "BitPay Visa&reg; Cards"
-msgstr "BitPay Visa&reg; Karten"
+#: www/views/preferencesbitzecServices.html:9
+msgid "bitzec Visa&reg; Cards"
+msgstr "bitzec Visa&reg; Karten"
 
 #: www/views/addressbook.add.html:38
 #: www/views/includes/incomingDataMenu.html:29
@@ -494,7 +494,7 @@ msgstr "Mining-Fee Berechnung"
 #: www/views/includes/incomingDataMenu.html:54
 #: www/views/includes/incomingDataMenu.html:73
 #: www/views/includes/incomingDataMenu.html:97 www/views/includes/note.html:6
-#: www/views/modals/bitpay-card-confirmation.html:8
+#: www/views/modals/bitzec-card-confirmation.html:8
 #: www/views/modals/confirmation.html:13
 msgid "Cancel"
 msgstr "Abbruch"
@@ -511,7 +511,7 @@ msgstr "Wallet kann nicht erstellt werden"
 msgid "Cannot join the same wallet more that once"
 msgstr "An einem Wallet kann nicht mehrfach teilgenommen werden"
 
-#: www/views/includes/bitpayCardsCard.html:2
+#: www/views/includes/bitzecCardsCard.html:2
 msgid "Cards"
 msgstr "Karten"
 
@@ -579,7 +579,7 @@ msgstr "Hash übertragen"
 msgid "Complete the backup process to use this option"
 msgstr "Beenden Sie den Backupvorgang um diese Option zu nutzen"
 
-#: www/views/bitpayCard.html:93
+#: www/views/bitzecCard.html:93
 msgid "Completed"
 msgstr ""
 
@@ -611,13 +611,13 @@ msgstr "Bestätigen Sie Ihr neues Passwort"
 msgid "Confirmations"
 msgstr "Bestätigungen"
 
-#: www/views/bitpayCard.html:68 www/views/modals/wallet-balance.html:61
+#: www/views/bitzecCard.html:68 www/views/modals/wallet-balance.html:61
 msgid "Confirming"
 msgstr "Bestätigen"
 
-#: www/views/bitpayCardIntro.html:37
-msgid "Connect my BitPay Card"
-msgstr "Verbinde meine BitPay-Karte"
+#: www/views/bitzecCardIntro.html:37
+msgid "Connect my bitzec Card"
+msgstr "Verbinde meine bitzec-Karte"
 
 #: src/js/services/onGoingProcess.js:13
 msgid "Connecting to Coinbase..."
@@ -770,7 +770,7 @@ msgstr ""
 msgid "Could not get the invoice"
 msgstr ""
 
-#: src/js/controllers/bitpayCard.js:66
+#: src/js/controllers/bitzecCard.js:66
 msgid "Could not get transactions"
 msgstr "Transaktionen konnten nicht gefunden werden"
 
@@ -791,12 +791,12 @@ msgstr "Beteiligung am Wallet nicht möglich"
 msgid "Could not reject payment"
 msgstr "Zahlung konnte nicht abgelehnt werden"
 
-#: src/js/controllers/preferencesBitpayServices.js:33
+#: src/js/controllers/preferencesbitzecServices.js:33
 msgid "Could not remove account"
 msgstr "Konto konnte nicht entfernt werden"
 
-#: src/js/controllers/preferencesBitpayCard.js:20
-#: src/js/controllers/preferencesBitpayServices.js:50
+#: src/js/controllers/preferencesbitzecCard.js:20
+#: src/js/controllers/preferencesbitzecServices.js:50
 msgid "Could not remove card"
 msgstr "Karte konnte nicht gelöscht werden"
 
@@ -1016,9 +1016,9 @@ msgstr ""
 msgid "Enter Spending Password"
 msgstr "Berechtigungscode eingeben"
 
-#: src/js/services/bitpayAccountService.js:110
-msgid "Enter Two Factor for your BitPay account"
-msgstr "Eingabe des Zwei-Faktor-Authentifizierungs-Codes für das BitPay Konto"
+#: src/js/services/bitzecAccountService.js:110
+msgid "Enter Two Factor for your bitzec account"
+msgstr "Eingabe des Zwei-Faktor-Authentifizierungs-Codes für das bitzec Konto"
 
 #: www/views/amount.html:4
 msgid "Enter amount"
@@ -1048,9 +1048,9 @@ msgstr "Passwort eingeben"
 #. Trying to import a malformed wallet export QR code
 #: src/js/controllers/activity.js:45 src/js/controllers/addressbookAdd.js:30
 #: src/js/controllers/addressbookView.js:42 src/js/controllers/addresses.js:125
-#: src/js/controllers/addresses.js:126 src/js/controllers/bitpayCard.js:66
-#: src/js/controllers/bitpayCardIntro.js:40
-#: src/js/controllers/bitpayCardIntro.js:81 src/js/controllers/buyAmazon.js:24
+#: src/js/controllers/addresses.js:126 src/js/controllers/bitzecCard.js:66
+#: src/js/controllers/bitzecCardIntro.js:40
+#: src/js/controllers/bitzecCardIntro.js:81 src/js/controllers/buyAmazon.js:24
 #: src/js/controllers/buyAmazon.js:35 src/js/controllers/buyMercadoLibre.js:24
 #: src/js/controllers/buyMercadoLibre.js:35 src/js/controllers/confirm.js:307
 #: src/js/controllers/copayers.js:67 src/js/controllers/create.js:161
@@ -1077,9 +1077,9 @@ msgstr "Passwort eingeben"
 #: src/js/controllers/modals/feeLevels.js:9
 #: src/js/controllers/modals/txpDetails.js:140
 #: src/js/controllers/paperWallet.js:47
-#: src/js/controllers/preferencesBitpayCard.js:20
-#: src/js/controllers/preferencesBitpayServices.js:33
-#: src/js/controllers/preferencesBitpayServices.js:50
+#: src/js/controllers/preferencesbitzecCard.js:20
+#: src/js/controllers/preferencesbitzecServices.js:33
+#: src/js/controllers/preferencesbitzecServices.js:50
 #: src/js/controllers/preferencesDelete.js:36
 #: src/js/controllers/preferencesExternal.js:20
 #: src/js/controllers/tab-home.js:174 src/js/controllers/tab-send.js:143
@@ -1117,8 +1117,8 @@ msgstr ""
 msgid "Error in Payment Protocol"
 msgstr ""
 
-#: src/js/controllers/bitpayCardIntro.js:14
-msgid "Error pairing BitPay Account"
+#: src/js/controllers/bitzecCardIntro.js:14
+msgid "Error pairing bitzec Account"
 msgstr ""
 
 #: src/js/controllers/paperWallet.js:41
@@ -1129,7 +1129,7 @@ msgstr "Fehler beim Ermitteln des Guthaben:"
 msgid "Error sweeping wallet:"
 msgstr "Fehler beim Leeren der Wallet:"
 
-#: src/js/controllers/bitpayCardIntro.js:20
+#: src/js/controllers/bitzecCardIntro.js:20
 msgid "Error updating Debit Cards"
 msgstr "Fehler beim Aktualisieren der Debitkarten"
 
@@ -1205,8 +1205,8 @@ msgstr ""
 "erneut."
 
 #: src/js/services/onGoingProcess.js:42
-msgid "Fetching BitPay Account..."
-msgstr "BitPay Konto abrufen..."
+msgid "Fetching bitzec Account..."
+msgstr "bitzec Konto abrufen..."
 
 #: src/js/services/onGoingProcess.js:21
 msgid "Fetching payment information"
@@ -1240,9 +1240,9 @@ msgstr "Zur Kontrolle"
 msgid "From"
 msgstr "Von"
 
-#: src/js/controllers/bitpayCardIntro.js:71
-msgid "From BitPay account"
-msgstr "Von BitPay Konto"
+#: src/js/controllers/bitzecCardIntro.js:71
+msgid "From bitzec account"
+msgstr "Von bitzec Konto"
 
 #: www/views/tab-import-phrase.html:57
 msgid "From Hardware Wallet"
@@ -1292,7 +1292,7 @@ msgstr "CSV-Datei erzeugen..."
 msgid "Generating new address..."
 msgstr "Neue Adresse erzeugen..."
 
-#: www/views/bitpayCardIntro.html:23
+#: www/views/bitzecCardIntro.html:23
 msgid ""
 "Get local cash anywhere you go, from any Visa<sup>&reg;</sup> compatible "
 "ATM. ATM bank fees may apply."
@@ -1301,10 +1301,10 @@ msgstr ""
 "Bankomaten. Es fallen eventuell Bankomatgebühren an."
 
 #: www/views/onboarding/collectEmail.html:15
-msgid "Get news and updates from BitPay"
-msgstr "Erhalten Sie Neuigkeiten und Aktualisierungen von BitPay"
+msgid "Get news and updates from bitzec"
+msgstr "Erhalten Sie Neuigkeiten und Aktualisierungen von bitzec"
 
-#: www/views/bitpayCard.html:49
+#: www/views/bitzecCard.html:49
 msgid "Get started"
 msgstr "Los geht’s"
 
@@ -1338,7 +1338,7 @@ msgstr ""
 msgid "Gift card generated and ready to use."
 msgstr ""
 
-#: src/js/controllers/bitpayCard.js:114 src/js/controllers/bitpayCard.js:124
+#: src/js/controllers/bitzecCard.js:114 src/js/controllers/bitzecCard.js:124
 #: src/js/controllers/cashScan.js:20 src/js/controllers/onboarding/terms.js:23
 #: src/js/controllers/preferences.js:67
 #: src/js/controllers/preferencesAbout.js:16
@@ -1352,7 +1352,7 @@ msgstr "Zurück"
 #: src/js/controllers/confirm.js:131
 #: src/js/controllers/onboarding/backupRequest.js:20
 #: src/js/controllers/onboarding/backupRequest.js:26
-#: src/js/services/bitpayAccountService.js:84
+#: src/js/services/bitzecAccountService.js:84
 msgid "Go back"
 msgstr "Zurück"
 
@@ -1384,7 +1384,7 @@ msgstr "Hardware-Wallets werden auf diesem Gerät nicht unterstützt"
 msgid "Help & Support"
 msgstr "Hilfe & Support"
 
-#: src/js/controllers/bitpayCard.js:112 src/js/controllers/tab-settings.js:50
+#: src/js/controllers/bitzecCard.js:112 src/js/controllers/tab-settings.js:50
 msgid "Help and support information is available at the website."
 msgstr "Hilfe und Support-Informationen gibt es auf der Website."
 
@@ -1505,11 +1505,11 @@ msgstr ""
 
 #: src/js/controllers/onboarding/backupRequest.js:18
 msgid ""
-"If this device is replaced or this app is deleted, neither you nor BitPay "
+"If this device is replaced or this app is deleted, neither you nor bitzec "
 "can recover your funds without a backup."
 msgstr ""
 "Wenn dieses Gerät ersetzt oder diese App gelöscht wird, so können weder Sie "
-"noch BitPay Ihr Geld ohne eine Sicherung wiederherstellen."
+"noch bitzec Ihr Geld ohne eine Sicherung wiederherstellen."
 
 #: www/views/feedback/complete.html:23
 msgid ""
@@ -1694,7 +1694,7 @@ msgstr "Schlüssel ist bereits mit einem existierenden Wallet verbunden"
 msgid "Language"
 msgstr "Sprache"
 
-#: www/views/bitpayCard.html:61
+#: www/views/bitzecCard.html:61
 msgid "Last Month"
 msgstr "Letzter Monat"
 
@@ -1744,7 +1744,7 @@ msgstr ""
 msgid "Log options"
 msgstr ""
 
-#: www/views/modals/bitpay-card-confirmation.html:14
+#: www/views/modals/bitzec-card-confirmation.html:14
 msgid "Log out"
 msgstr ""
 
@@ -1949,8 +1949,8 @@ msgid "Not enough funds for fee"
 msgstr "Das Guthaben reicht nicht für die Gebühr"
 
 #: www/views/onboarding/tour.html:50
-msgid "Not even BitPay can access it."
-msgstr "Nicht einmal BitPay kann darauf zugreifen."
+msgid "Not even bitzec can access it."
+msgstr "Nicht einmal bitzec kann darauf zugreifen."
 
 #: src/js/controllers/paperWallet.js:47
 msgid "Not funds found"
@@ -2038,7 +2038,7 @@ msgid "On this screen you can see all your wallets, accounts, and assets."
 msgstr ""
 "Auf diesem Bildschirm sehen Sie alle Ihre Wallets, Konten und Guthaben."
 
-#: src/js/controllers/bitpayCard.js:113 src/js/controllers/cashScan.js:19
+#: src/js/controllers/bitzecCard.js:113 src/js/controllers/cashScan.js:19
 #: src/js/controllers/preferences.js:66
 #: src/js/controllers/preferencesCash.js:33
 #: src/js/controllers/tab-settings.js:51 src/js/controllers/tx-details.js:55
@@ -2057,7 +2057,7 @@ msgstr "Öffne GitHub"
 msgid "Open GitHub Project"
 msgstr "Öffne GitHub Projekt"
 
-#: src/js/controllers/bitpayCard.js:123 src/js/controllers/tx-details.js:192
+#: src/js/controllers/bitzecCard.js:123 src/js/controllers/tx-details.js:192
 msgid "Open Insight"
 msgstr "Öffne Insight"
 
@@ -2089,9 +2089,9 @@ msgstr "Öffne Wallet"
 msgid "Open website"
 msgstr ""
 
-#: www/views/bitpayCardIntro.html:34
-msgid "Order the BitPay Card"
-msgstr "BitPay-Karte bestellen"
+#: www/views/bitzecCardIntro.html:34
+msgid "Order the bitzec Card"
+msgstr "bitzec-Karte bestellen"
 
 #: www/views/join.html:105 www/views/join.html:96
 #: www/views/tab-create-personal.html:69 www/views/tab-create-personal.html:77
@@ -2113,7 +2113,7 @@ msgstr "Einladung hier einfügen"
 msgid "Paste the backup plain text code"
 msgstr "Den Klartext der Sicherung einfügen"
 
-#: www/views/bitpayCardIntro.html:28
+#: www/views/bitzecCardIntro.html:28
 msgid "Pay 0% fees to turn Bitzec into dollars."
 msgstr "Zahle 0 % Gebühren um Bitzec in Dollar zu wechseln."
 
@@ -2241,7 +2241,7 @@ msgstr ""
 msgid "Please, select your backup file"
 msgstr "Bitte die Sicherungsdatei wählen"
 
-#: www/views/bitpayCard.html:81
+#: www/views/bitzecCard.html:81
 msgid "Pre-Auth Holds"
 msgstr ""
 
@@ -2372,7 +2372,7 @@ msgstr "Erhaltener Betrag"
 msgid "Receiving"
 msgstr "Eingehend"
 
-#: www/views/bitpayCard.html:60 www/views/includes/walletHistory.html:3
+#: www/views/bitzecCard.html:60 www/views/includes/walletHistory.html:3
 msgid "Recent"
 msgstr "Kürzlich"
 
@@ -2422,21 +2422,21 @@ msgstr "Release-Informationen"
 msgid "Remove"
 msgstr ""
 
-#: src/js/controllers/preferencesBitpayServices.js:7
-msgid "Remove BitPay Account?"
-msgstr "BitPay-Konto entfernen?"
+#: src/js/controllers/preferencesbitzecServices.js:7
+msgid "Remove bitzec Account?"
+msgstr "bitzec-Konto entfernen?"
 
-#: src/js/controllers/preferencesBitpayServices.js:19
-msgid "Remove BitPay Card?"
-msgstr "BitPay Karte entfernen?"
+#: src/js/controllers/preferencesbitzecServices.js:19
+msgid "Remove bitzec Card?"
+msgstr "bitzec Karte entfernen?"
 
-#: src/js/controllers/preferencesBitpayServices.js:8
+#: src/js/controllers/preferencesbitzecServices.js:8
 msgid ""
-"Removing your BitPay account will remove all associated BitPay account data "
-"from this device. Are you sure you would like to remove your BitPay Account "
+"Removing your bitzec account will remove all associated bitzec account data "
+"from this device. Are you sure you would like to remove your bitzec Account "
 "({{email}}) from this device?"
 msgstr ""
-"Das Entfernen des BitPay-Kontos löscht alle zugehörigen Daten von diesem "
+"Das Entfernen des bitzec-Kontos löscht alle zugehörigen Daten von diesem "
 "Gerät. Soll wirklich das BityPay-Konto ({{email}}) von diesem Gerät entfernt "
 "werden?"
 
@@ -2928,9 +2928,9 @@ msgstr ""
 
 #: src/js/controllers/onboarding/terms.js:21
 msgid ""
-"The official English Terms of Service are available on the BitPay website."
+"The official English Terms of Service are available on the bitzec website."
 msgstr ""
-"Die offizielle englischen Nutzungsbedingungen sind auf der BitPay Website "
+"Die offizielle englischen Nutzungsbedingungen sind auf der bitzec Website "
 "verfügbar."
 
 #: www/views/tab-import-phrase.html:4
@@ -3086,8 +3086,8 @@ msgstr ""
 "Um loszulegen müssen Sie eine Bitzec-Wallet erstellen und einige Bitcoins "
 "erhalten."
 
-#: src/js/services/bitpayAccountService.js:73
-msgid "To {{reason}} you must first add your BitPay account - {{email}}"
+#: src/js/services/bitzecAccountService.js:73
+msgid "To {{reason}} you must first add your bitzec account - {{email}}"
 msgstr ""
 
 #: src/js/services/onGoingProcess.js:48
@@ -3169,7 +3169,7 @@ msgstr "Übertragung zur Wallet"
 msgid "Try again in {{expires}}"
 msgstr "Versuchen Sie es erneut in {{expires}}"
 
-#: www/views/bitpayCardIntro.html:18
+#: www/views/bitzecCardIntro.html:18
 msgid ""
 "Turn Bitzec into dollars, swipe anywhere Visa<sup>&reg;</sup> is accepted."
 msgstr ""
@@ -3248,7 +3248,7 @@ msgstr "Alle Adressen anzeigen"
 msgid "View Terms of Service"
 msgstr "Nutzungsbedingungen anzeigen"
 
-#: src/js/controllers/bitpayCard.js:122 src/js/controllers/tx-details.js:191
+#: src/js/controllers/bitzecCard.js:122 src/js/controllers/tx-details.js:191
 msgid "View Transaction on Insight"
 msgstr "Transaktionen auf Insight anzeigen"
 
@@ -3612,8 +3612,8 @@ msgid ""
 "You should not set a fee higher than {{maxFeeRecommended}} satoshis/byte."
 msgstr ""
 
-#: www/views/modals/bitpay-card-confirmation.html:5
-msgid "You will need to log back for fill in your BitPay Card."
+#: www/views/modals/bitzec-card-confirmation.html:5
+msgid "You will need to log back for fill in your bitzec Card."
 msgstr ""
 
 #: www/views/preferencesNotifications.html:34
@@ -3624,9 +3624,9 @@ msgstr ""
 "Sie erhalten E-Mail Benachrichtigungen über gesendete und empfangen "
 "Zahlungen aus Ihren Wallets."
 
-#: www/views/bitpayCard.html:50
+#: www/views/bitzecCard.html:50
 msgid ""
-"Your BitPay Card is ready. Add funds to your card to start using it at "
+"Your bitzec Card is ready. Add funds to your card to start using it at "
 "stores and ATMs worldwide."
 msgstr ""
 
@@ -3694,9 +3694,9 @@ msgstr "[Guthaben versteckt]"
 msgid "[Scanning Funds]"
 msgstr ""
 
-#: src/js/controllers/bitpayCardIntro.js:11
-msgid "add your BitPay Visa card(s)"
-msgstr "Ihre BitPay Visa Karte(n) hinzufügen"
+#: src/js/controllers/bitzecCardIntro.js:11
+msgid "add your bitzec Visa card(s)"
+msgstr "Ihre bitzec Visa Karte(n) hinzufügen"
 
 #: www/views/includes/available-balance.html:8
 msgid "locked by pending payments"
@@ -3730,12 +3730,12 @@ msgstr ""
 msgid ""
 "{{appName}} depends on Bitcore Wallet Service (BWS) for blockchain "
 "information, networking and Copayer synchronization. The default "
-"configuration points to https://bws.bitpay.com (BitPay's public BWS "
+"configuration points to https://bws.bitzec.com (bitzec's public BWS "
 "instance)."
 msgstr ""
 "{{appName}} hängt von Bitcore Wallet Service (BWS) ab bezüglich Blockchain "
 "Informationen, Vernetzung und Copayer Synchronisation. Die Standard "
-"Konfiguration verweist auf https://bws.bitpay.com (BitPays öffentlicher BWS "
+"Konfiguration verweist auf https://bws.bitzec.com (bitzecs öffentlicher BWS "
 "Instanz)."
 
 #: src/js/controllers/confirm.js:408

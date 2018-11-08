@@ -138,7 +138,7 @@ angular.module('copayApp.controllers').controller('confirmController', function(
         $state.go('tabs.send').then(function() {
           $ionicHistory.clearHistory();
           if (!back) {
-            var url = 'https://support.bitpay.com/hc/en-us/articles/115004671663';
+            var url = 'https://support.bitzec.com/hc/en-us/articles/115004671663';
             externalLinkService.open(url);
           }
         });

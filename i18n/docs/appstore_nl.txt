@@ -1,4 +1,4 @@
-Beveilig bitcoin op je eigen voorwaarden met een open source, multisignature rekening van BitPay. 
+Beveilig bitcoin op je eigen voorwaarden met een open source, multisignature rekening van bitzec. 
 Copay gebruikers kunnen individueel vermogen aanhouden of financiën veilig delen met andere gebruikers door gebruik te maken van een multisignature rekening, hiermee voorkom je niet-geautoriseerde betalingen doordat meerdere goedkeuringen nodig zijn. Hier zijn een aantal manieren waarop Copay gebruikt kan worden met anderen:
 
 Om te sparen voor vakanties of gezamenlijke aankopen met vrienden 
@@ -20,4 +20,4 @@ E-mailberichten voor betalingen en transfers
 Aanpasbare rekeningen naamgeving en achtergrond kleuren
 9 ondersteunde talen (NL, CS, FR, DE, het, ES, JA, PL, RU)
 
-Copay is gratis en open sourcesoftware draaiend op niet-merkgebonden servers, dus er is geen noodzaak om te vertrouwen op een bedrijf voor ondersteuning. Iedereen kan bijdragen aan Copay door de broncode op te vragen via GitHub (https://github.com/bitpay/copay). 
+Copay is gratis en open sourcesoftware draaiend op niet-merkgebonden servers, dus er is geen noodzaak om te vertrouwen op een bedrijf voor ondersteuning. Iedereen kan bijdragen aan Copay door de broncode op te vragen via GitHub (https://github.com/bitzec/copay). 

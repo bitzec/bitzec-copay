@@ -9,7 +9,7 @@
   "dependencies": {
     "angular-gettext": "^2.3.10",
     "angular-moment": "^1.1.0",
-    "angular-qrcode": "bitpay/angular-qrcode#~6.3.0",
+    "angular-qrcode": "bitzec/angular-qrcode#~6.3.0",
     "ionic": "https://github.com/ionic-team/ionic-v1.git#8f80afc835",
     "moment": "^2.19.3",
     "ng-lodash": "^0.5.0",

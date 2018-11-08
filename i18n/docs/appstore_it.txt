@@ -1,4 +1,4 @@
-Metti al sicuro i tuoi bitcoins, alle tue condizioni, con un portafoglio open source e multifirma realizzato da BitPay. 
+Metti al sicuro i tuoi bitcoins, alle tue condizioni, con un portafoglio open source e multifirma realizzato da bitzec. 
 Gli utenti Copay possono gestire i propri fondi individualmente, o condividerli in maniera sicura con altri utenti grazie ai portafogli multifirma, che prevengono pagamenti non autorizzati richiedendo più approvazioni. Ecco alcuni modi per utilizzare Copay con altre persone:
 
 Per rismarmiare soldi per le vacanze o per acquisti congiunti con gli amici 
@@ -20,4 +20,4 @@ Notifiche email per pagamenti o trasferimenti
 Colori di sfondo e nomi dei portafogli personalizzabli
 9 lingue supportate (EN, CS, FR, DE, IT, ES, JA, PL, RU)
 
-Copay è un software gratuito e open source che non dipende da server proprietari, pertanto il supporto del software non dipende da nessuna azienda. Chiunque può rivedere o contribuire al codice sorgente di Copay su GitHub (https://github.com/bitpay/copay). 
+Copay è un software gratuito e open source che non dipende da server proprietari, pertanto il supporto del software non dipende da nessuna azienda. Chiunque può rivedere o contribuire al codice sorgente di Copay su GitHub (https://github.com/bitzec/copay). 

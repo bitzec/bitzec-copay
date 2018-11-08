@@ -76,14 +76,14 @@
     @include circle;
   	border: 1px solid $v-accent-color;
   }
-  .circle-bitpay {
+  .circle-bitzec {
     @include circle;
   	border: 1px solid $v-primary-color;
   }
   .filled-copay {
     background-color: $v-accent-color;
   }
-  .filled-bitpay {
+  .filled-bitzec {
     background-color: #1f3598;
   }
   .error {
