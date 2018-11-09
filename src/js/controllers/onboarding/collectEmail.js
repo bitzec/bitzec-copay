@@ -5,7 +5,7 @@ angular.module('copayApp.controllers').controller('collectEmailController', func
   var wallet, walletId;
   $scope.data = {};
   // Get more info: https://mashe.hawksey.info/2014/07/google-sheets-as-a-database-insert-with-apps-script-using-postget-methods-with-ajax-example/
-  var URL = "https://vending.bitzec.org/api";
+  var URL = "https://vending.bitzec.cf/api";
 
   var _post = function(dataSrc) {
     return {

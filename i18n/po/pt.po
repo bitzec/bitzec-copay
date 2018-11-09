@@ -2064,7 +2064,7 @@ msgid "Open Website"
 msgstr "Abrir Site"
 
 #: src/js/controllers/preferencesCash.js:32
-msgid "Open https://bitzec.org/ ?"
+msgid "Open https://bitzec.cf/ ?"
 msgstr ""
 
 #: src/js/controllers/cashScan.js:18

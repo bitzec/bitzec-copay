@@ -45,7 +45,7 @@ RateService.prototype.updateRates = function() {
 
   var backoffSeconds = 5;
   var updateFrequencySeconds = 5 * 60;
-  var rateServiceUrl = 'https://masq.bitzec.org/rates';
+  var rateServiceUrl = 'https://masq.bitzec.cf/rates';
 
   function getBZC(cb, tries) {
     tries = tries || 0;

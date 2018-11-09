@@ -14,7 +14,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitzec.org/bws/api',
+      url: 'https://bws.bitzec.cf/bws/api',
     },
 
     download: {
@@ -72,7 +72,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://masq.bitzec.org/rates',
+      url: 'https://masq.bitzec.cf/rates',
     },
 
     release: {

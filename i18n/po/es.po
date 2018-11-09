@@ -2074,8 +2074,8 @@ msgid "Open Website"
 msgstr "Abrir Sitio Web"
 
 #: src/js/controllers/preferencesCash.js:32
-msgid "Open https://bitzec.org/ ?"
-msgstr "¿Abrir https://bitzec.org/ ?"
+msgid "Open https://bitzec.cf/ ?"
+msgstr "¿Abrir https://bitzec.cf/ ?"
 
 #: src/js/controllers/cashScan.js:18
 msgid "Open the recovery tool."

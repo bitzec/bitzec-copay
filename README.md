@@ -3,7 +3,7 @@ This software should be used at your own risk. It is experimental.
 
 <img src="https://raw.githubusercontent.com/bitzec/bitzec-copay/master/resources/copay/android/icon/drawable-xxxhdpi-icon.  png" alt="Bitzec" width="79">
 
-Bitzec Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Bitzec Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for peer synchronization and network interfacing.
+Bitzec Wallet is a secure bitcoin wallet platform for both desktop and mobile devices. Bitzec Wallet uses [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service-bzc) (BWS) for peer synchronization and network interfacing.
 
 Binary versions of Bitzec Wallet are available for download at [bitzec.global](https://www.bitzec.global/en/#wallets).
 For a list of frequently asked questions please visit the [Copay FAQ](https://github.com/bitpay/copay/wiki/COPAY---FAQ).
@@ -240,7 +240,7 @@ Since version 1.5, Bitzec Wallet uses the root `m/48'` for hardware multisignatu
 
 ## Bitcore Wallet Service
 
-Bitzec Wallet depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service) (BWS) for blockchain information, networking and Bitzec Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within Bitzec Wallet.  BWS also allows Bitzec Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
+Bitzec Wallet depends on [Bitcore Wallet Service](https://github.com/bitpay/bitcore-wallet-service-bzc) (BWS) for blockchain information, networking and Bitzec Wallet synchronization.  A BWS instance can be setup and operational within minutes or you can use a public instance like `https://bws.bitpay.com`.  Switching between BWS instances is very simple and can be done with a click from within Bitzec Wallet.  BWS also allows Bitzec Wallet to interoperate with other wallets like [Bitcore Wallet CLI] (https://github.com/bitpay/bitcore-wallet).
 
 ## Hardware Wallet Support
 
