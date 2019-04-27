@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Bitzec"
-#define MyAppVersion "10.2.10"
+#define MyAppVersion "10.2.0"
 #define MyAppPublisher "Bitzec Project"
 #define MyAppURL "https://github.com/bitzec/bitzec-copay"
 #define MyAppExeName "Bitzec.exe"
