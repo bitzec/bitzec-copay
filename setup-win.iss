@@ -46,7 +46,7 @@ Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFil
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Registry]
-Root: HKCR; Subkey: "bitzec"; ValueType: "string"; ValueData: "URL:Bitzec Custom Protocol"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "bitzec"; ValueType: "string"; ValueData: "URL:Bitcoinz Custom Protocol"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "bitzec"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
 Root: HKCR; Subkey: "bitzec\DefaultIcon"; ValueType: "string"; ValueData: "{app}\{#MyAppExeName},0"
-
+Root: HKCR; Subkey: "bitzec\shell\open\command"; ValueType: "string"; ValueData: """{app}\{#MyAppExeName}"" ""%1"""
