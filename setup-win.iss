@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Bitzec"
-#define MyAppVersion "10.0.10"
+#define MyAppVersion "10.2.10"
 #define MyAppPublisher "Bitzec Project"
 #define MyAppURL "https://github.com/bitzec/bitzec-copay"
 #define MyAppExeName "Bitzec.exe"
@@ -49,4 +49,4 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 Root: HKCR; Subkey: "bitzec"; ValueType: "string"; ValueData: "URL:Bitzec Custom Protocol"; Flags: uninsdeletekey
 Root: HKCR; Subkey: "bitzec"; ValueType: "string"; ValueName: "URL Protocol"; ValueData: ""
 Root: HKCR; Subkey: "bitzec\DefaultIcon"; ValueType: "string"; ValueData: "{app}\{#MyAppExeName},0"
-Root: HKCR; Subkey: "bitzec\shell\open\command"; ValueType: "string"; ValueData: """{app}\{#MyAppExeName}"" ""%1"""
+
